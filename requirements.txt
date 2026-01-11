@@ -1,6 +1,2 @@
-certifi==2018.11.29
-chardet==3.0.4
-idna==2.7
-requests==2.20.1
-urllib3==1.26.18
-virtualenv==16.1.0
+streamlit
+requests
