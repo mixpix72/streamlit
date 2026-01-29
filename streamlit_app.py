@@ -13,5 +13,15 @@ import altair as alt
 # 	st.write('Goodbye')
 
 st.header('st.write demo')
+
+st.header('Display Text', divider=True)
 st.write('Hello, *World!* :sunglasses:')
+
+st.header('Display Numbers', divider=True)
 st.write(1234)
+
+df = pd.DataFrame({
+	'first column': [1, 2, 3, 4],
+	'second column': [10, 20, 30, 40]
+})
+st.write('DataFrame:', df)
