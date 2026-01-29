@@ -20,8 +20,9 @@ st.write('Hello, *World!* :sunglasses:')
 st.header('Display Numbers', divider=True)
 st.write(1234)
 
+st.header('Display Data Frame', divider=True)
 df = pd.DataFrame({
 	'first column': [1, 2, 3, 4],
 	'second column': [10, 20, 30, 40]
 })
-st.write('DataFrame:', df)
+st.write('**Below** is a DataFrame:', df, '**Above** is a dataframe.')
