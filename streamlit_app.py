@@ -4,6 +4,8 @@ import pandas as pd
 import altair as alt
 from datetime import datetime, time 
 
+##This is a tutorial to get familiar with some of the basic Streamlit components##
+
 st.header('Button demo', divider=True)
 st.button("Reset", type="primary")
 
@@ -14,12 +16,8 @@ if st.button('Say hello'):
 else:
 	st.write('Goodbye')
 
-st.header('st.write demo', divider=True)
-
-st.header('Display Text', divider=True)
+st.header('Display Text & Numbers', divider=True)
 st.write('Hello, *World!* :sunglasses:')
-
-st.header('Display Numbers', divider=True)
 st.write(1234)
 
 st.header('Display Data Frame', divider=True)
@@ -61,3 +59,10 @@ start_time = st.slider(
      value=datetime(2020, 1, 1, 9, 30),
      format="MM/DD/YY - hh:mm")
 st.write("Start time:", start_time.strftime('%m/%d/%y - %I:%M %p'))
+
+st.header('Line Chart demo', divider=True)
+chart_data = pd.DataFrame(
+	 np.random.randn(20, 3),
+	 columns=['a', 'b', 'c'])
+st.line_chart(chart_data)
+
