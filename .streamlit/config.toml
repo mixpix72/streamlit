@@ -1,5 +1,5 @@
 [theme]
 primaryColor = "#4CAF50"  # Green - change to any color you want
-backgroundColor = "##000000"
+backgroundColor = "#000000"
 secondaryBackgroundColor = "#F0F2F6"
 textColor = "#262730"
